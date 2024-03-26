@@ -166,7 +166,7 @@ async def main(_, gin_args: Dict[str, Any]):
             path=staging,
             # TODO(chenandrew): deeplearning image is still on python3.7
             # base_image='gcr.io/deeplearning-platform-release/base-cpu',
-            base_image='python:3.9',
+            base_image='python:3.10',
             docker_instructions=[
                 *copy_t5x,
                 'WORKDIR t5x',
