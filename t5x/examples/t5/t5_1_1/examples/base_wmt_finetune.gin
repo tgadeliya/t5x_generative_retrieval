@@ -17,7 +17,9 @@ DROPOUT_RATE = 0.1
 TRAIN_STEPS = 1_020_000  # 1000000 pre-trained steps + 20000 fine-tuning steps.
 USE_CACHED_TASKS = False
 
-INITIAL_CHECKPOINT_PATH = "gs://t5-data/pretrained_models/t5x/t5_1_1_base/checkpoint_1000000"
+INITIAL_CHECKPOINT_PATH = "gs://generative_retrieval_usa/tsimur.hadeliya/models/t5x_small_ckpt_20900"
+# INITIAL_CHECKPOINT_PATH = "gs://t5-data/pretrained_models/t5x/t5_1_1_base/checkpoint_1000000"
+
 
 # `LOSS_NORMALIZING_FACTOR`: When fine-tuning a model that was pre-trained
 # using Mesh Tensorflow (e.g. the public T5 / mT5 / ByT5 models), this should be

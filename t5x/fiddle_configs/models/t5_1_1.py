@@ -34,7 +34,7 @@ def vocabulary() -> fdl.Buildable[seqio.SentencePieceVocabulary]:
   return fdl.Config(
       seqio.SentencePieceVocabulary,
       sentencepiece_model_file=(
-          'gs://t5-data/vocabs/cc_all.32000.100extra/sentencepiece.model'
+          'gs://generative_retrieval_usa/tsimur.hadeliya/models/t5x_small_ckpt_20900'
       ),
   )
 
